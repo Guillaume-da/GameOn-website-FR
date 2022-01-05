@@ -45,7 +45,13 @@ p {
   font-weight: 500;
 }
 
-.topnav a:hover, .mobile-menu nav a:hover {
+.topnav a:hover  {
+  background-color: var(--red);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.mobile-menu nav a:hover {
   background-color: var(--red);
   color: #ffffff;
   border-radius: 8px;
