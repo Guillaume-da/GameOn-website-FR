@@ -7,6 +7,12 @@ const mobileMenu = {
       mobileMenuIcon.addEventListener("click", function () {
       mobileMenu.classList.toggle("mobile-menu-visible");
       });
+
+      window.addEventListener('resize', function(event){
+        if(window.innerWidth > 1440){
+          mobileMenu.classList.remove("mobile-menu-visible");
+        }
+      })
     }
   }
   
