@@ -8,6 +8,7 @@ const mobileMenu = {
       mobileMenu.classList.toggle("mobile-menu-visible");
       });
 
+      // Hide mobile menu if screen width is bigger than 1440px
       window.addEventListener('resize', function(event){
         if(window.innerWidth > 1440){
           mobileMenu.classList.remove("mobile-menu-visible");

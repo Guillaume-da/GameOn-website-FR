@@ -697,6 +697,12 @@ footer {
     height: 105vh;
     width: 100%;
   }
+  .text-control {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    height: 24px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -729,7 +735,8 @@ footer {
   }
   .text-control {
     width: 100%;
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: -moz-available;
+    width: -webkit-fill-available;
     height: 24px;
   }
   .locations {
@@ -872,6 +879,12 @@ footer {
   }
   .modal-button-container {
     top: 500px;
+  }
+  .text-control {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    height: 24px;
   }
 }
 
