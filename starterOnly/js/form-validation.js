@@ -97,13 +97,15 @@ const validation = {
           const birthdateParent = birthdate.parentNode;
   
           // Regex for date validation
-          const dateRegex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+          const dateRegex = /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/;
           let isValidBirthdate = false;
   
           // Check if birthdate field was completed
-          if (birthdateValue == "") {
+          if (birthdateValue == "" || !dateRegex.test(birthdateValue)) {
+
+            // Add attribute to display error message
             birthdateParent.setAttribute('data-error', 'Vous devez entrer une date ainsi: DD/MM/YYYY');
-  
+
             // Add data attribute to parent
             birthdateParent.setAttribute('data-error-visible', 'true');
           } else {
