@@ -694,7 +694,7 @@ footer {
     margin-top: 29px;
   }
   .modal-message-container {
-    height: 105vh;
+    /* height: 105vh; */
     width: 100%;
   }
   .text-control {
